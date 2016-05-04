@@ -100,6 +100,11 @@ router.post('/:stdId', function (req, res, next) {
       error.status = 404
       return next(error)
     }
+    if (Array.isArray(body)) {
+      error = new Error('Exception typeof array.')
+      error.status = 403
+      return next(error)
+    }
     var set = Object.assign(users[0].data, body)
     User.findByIdAndUpdate({_id: _id}, {$set: {data: set}}, function (err, user) {
       if (err) {
