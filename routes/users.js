@@ -45,7 +45,7 @@ router.delete('/:stdId/:collection', function (req, res, next) {
     }
     var userData = users[0].data
     if (!userData[collection]) {
-      error = new Error('Record not found.')
+      error = new Error('Property not found.')
       error.status = 401
       return next(error)
     }
@@ -58,8 +58,8 @@ router.delete('/:stdId/:collection', function (req, res, next) {
         if (err) {
           return next(err)
         }
-        res.json('updated', {
-          message: 'Record [' + collection + '] is deleted'
+        res.json({
+          message: 'Property [' + collection + '] is deleted'
         })
       }
     )
