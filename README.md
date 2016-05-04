@@ -2,9 +2,13 @@
 
 apidoc for HCI database api
 
+## API
+
 **Server IP & Port** `52.37.98.127:3000`
 
-ดู ตัวอย่างการใช้งาน [คลิก](./Example.md)
+ดู ตัวอย่างการใช้งาน api เพื่อต่อกับ db [คลิก](./Example.md)
+
+> วิธี deploy frontend ที่เป็น static file ขึ้น github page อยู่ข้างล่าง
 
 ### ทำความเข้าใจเรื่องรูปแบบข้อมูลก่อน
 -	ข้อมูลที่จัดเก็บจะเป็น Object 1 ก้อนเท่าัน้น
@@ -72,7 +76,7 @@ apidoc for HCI database api
 }
 ```
 
-## APIdoc
+### APIdoc
 
 ### 1. Show All Data
 
@@ -260,3 +264,22 @@ $.ajax({
     }
   });
 ```
+
+## วิธี Deploy Frontend (github page)
+
+ไม่จำเป็นต้องใช้ Angular React ก็ได้นะ ใช้แค่ jQuery หรือ javascript ล้วนๆก็ทำได้ js ไม่ต้อง compile
+
+อ่านวิธี [คลิก](https://help.github.com/articles/creating-project-pages-manually/)
+
+ตัวอย่าง repository & url
+-	[https://github.com/chinclubi/Deploy-bcbk-frontend](https://github.com/chinclubi/Deploy-bcbk-frontend)
+	
+	Url: [https://chinclubi.github.com/Deploy-bcbk-frontend](https://chinclubi.github.com/Deploy-bcbk-frontend) 
+
+-	[https://github.com/chinclubi/Deploy-fecs](https://github.com/chinclubi/Deploy-fecs/tree/gh-pages)
+	
+	Url: [https://chinclubi.github.com/Deploy-fecs](https://chinclubi.github.com/Deploy-fecs) 
+
+-	[https://github.com/chinclubi/connek7-frontend](https://github.com/chinclubi/connek7-frontend/tree/gh-pages)
+	
+	Url: [https://chinclubi.github.com/connek7-frontend](https://chinclubi.github.com/connek7-frontend) 
