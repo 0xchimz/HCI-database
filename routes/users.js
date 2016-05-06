@@ -21,6 +21,11 @@ router.get('/:stdId/:collection', function (req, res, next) {
       return next(error)
     }
     var data = users[0].data[collection]
+    if (!data) {
+      error = new Error('Cannot find ' + collection + ' in your database.')
+      error.status = 401
+      return next(error)
+    }
     data.stdId = collection
     res.json(users[0].data[collection])
   }
