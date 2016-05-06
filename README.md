@@ -4,7 +4,7 @@ apidoc for HCI database api
 
 ## API
 
-**Server IP & Port** `52.37.98.127:3000`
+**Server IP & Port** `52.37.98.127:3000/v1/`
 
 ดู ตัวอย่างการใช้งาน api เพื่อต่อกับ db [คลิก](./Example.md)
 
